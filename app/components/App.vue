@@ -48,6 +48,12 @@
           text="Key Value Store Example"
           @tap="showPage(pages.KVP)"
         />
+        <Button
+          class="btn btn-rounded-sm btn-primary"
+          height="70"
+          text="SQLite Example"
+          @tap="showPage(pages.SQLP)"
+        />
       </StackLayout>
     </ScrollView>
   </Page>
@@ -61,6 +67,7 @@ import SimpleFormPage from "./SimpleFormPage.vue";
 import VuexDemoPage from "./VuexDemoPage.vue";
 import WebviewPage from "./WebviewPage.vue";
 import DetectOnlinePage from "./DetectOnlinePage.vue";
+import SqlitePage from "./SqlitePage.vue";
 
 export default {
   data() {
@@ -73,7 +80,8 @@ export default {
         SFP: SimpleFormPage,
         VDP: VuexDemoPage,
         WP: WebviewPage,
-        DOP: DetectOnlinePage
+        DOP: DetectOnlinePage,
+        SQLP:SqlitePage
       }
     };
   },
